@@ -2,7 +2,7 @@ body * {
 	margin: 0;
 	border: 0;
 	padding: 0;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	/* outline: 1px dotted hotpink; */
 }
 
@@ -13,20 +13,23 @@ div.container {
 }
 
 div.container header {
-	padding: 10px 45px 15px 25px;
+	/* padding: 10px 45px 15px 25px; */
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: space-between;
-	background-color: aliceblue;
+	/* background-color: #f8f8f8; */
 }
 
 h1.name {
+	margin-left: 20px;
+	margin-bottom: 5px;
 	display: inline-block;
 	color: #000;
 	font-family: cursive;
 }
 
 h2.slogan {
+	margin-right: 40px;
 	display: inline-block;
 	color: #000;
 }
@@ -85,11 +88,13 @@ section.card {
 	background: linear-gradient(to bottom, #B2B1B5 0%, #878593 50%, #B2B1B5 100%);
 }
 
-p.description {
+section.about p {
 	padding: 10px;
 }
+
 section.about a {
 	padding: 10px;
+	color: #000;
 }
 
 div.showcase section.example {
@@ -106,14 +111,18 @@ section.example .card-header {
 	width: 270px;
 }
 
-.screenshot {
+img.screenshot {
 	width: 290px;
-	height: auto;
+	height: 160px;
 }
 
-section.card p {
+section.example p {
 	width: 270px;
-	height: 100px;
+	height: 140px;
+	padding: 10px;
+	font-size: 14px;
+	text-align: justify;
+	text-justify: distribute;
 }
 
 ul.tech-list {
@@ -131,33 +140,36 @@ ul.tech-list li {
 	margin: 5px;
 }
 
-img.tech-logo {
+img.tech-icon {
 	width: 46px;
 	height: 46px;
 }
 
 a.goto-demo {
+	width: fit-content;
 	border: 1px solid black;
 	border-radius: 5px;
 	padding: 5px;
-	margin: 20px;
+	margin-bottom: 20px;
+	display: block;
 	background-color: green;
 	color: white;
-	display: block;
-	width: fit-content;
+	text-decoration: none;
 }
 
-div.container footer {
+/* div.container footer {
 	padding: 5px;
 	align-items: center;
-	background-color: aliceblue;
-}
+	background-color: #f8f8f8;
+} */
 
-/* .page-bun {
+.page-bun {
 	width: 960px;
 	height: 60px;
-	background-color: aliceblue;
-} */
+	padding: 5px;
+	align-items: center;
+	background-color: ghostwhite;
+}
 
 footer p {
 	text-align: center;
@@ -180,6 +192,7 @@ a.social-media {
 	display: flex;
 	align-items: center;
 	font-style: italic;
+	color: #000;
 }
 
 a.social-media img {
